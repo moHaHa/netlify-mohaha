@@ -1,13 +1,10 @@
 <script setup lang="ts">
-const props = defineProps<{
-  name:string 
-}>()
-const uppercase = computed(()=> props.name.toUpperCase()) 
+
 </script>
 
 <template>
-  <div   font-sans text="xl gray-200"  >
-    hello  {{  uppercase}}, with UnoCSS 
+  <div>
+    <div text-4rem mb-3rem font-mono >Welcome In Netlify</div>
+    <div mx-auto  text-50px text="#04a29f" hover:color-white hover:mb-1  i-carbon-bee ></div>
   </div>
-  <div  text-30px text-yellow-200 hover:color-yellow-300 i-carbon-bee ></div>
 </template>
