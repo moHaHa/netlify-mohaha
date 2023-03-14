@@ -4,7 +4,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
-import { presetUno ,presetAttributify  } from 'unocss'
+import { presetUno ,presetAttributify ,presetIcons  } from 'unocss'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -14,7 +14,8 @@ export default defineConfig({
     UnoCSS({
       presets: [
         presetUno(),
-        presetAttributify()
+        presetAttributify(),
+        presetIcons()
       ]
     })
   ]
